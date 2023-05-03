@@ -1,0 +1,17 @@
+[package]
+name = "headercmp"
+version = "0.1.0"
+edition = "2021"
+
+[[bench]]
+name = "my_benchmark"
+harness = false
+
+[dependencies]
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+
+[build-dependencies]
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+
+[dev-dependencies]
+criterion = "0.4"
